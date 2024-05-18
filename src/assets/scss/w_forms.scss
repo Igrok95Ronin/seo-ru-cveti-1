@@ -1,0 +1,66 @@
+/* Стили для формы */
+.forms {
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.forms__box {
+    margin: auto;
+    background-color: rgb(61 79 69);
+    width: 80%;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.forms__title {
+    font-size: clamp(19px,5vw,40px);
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.forms__button {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 19px;
+    color: #fff;
+    background-color: rgb(255, 69, 0);
+    padding: 17px 40px 17px 60px;
+    border-radius: 26px;
+    -webkit-box-shadow: 0px 15px 40px 0px rgba(48, 159, 94, 0.3);
+    box-shadow: 0px 15px 40px 0px rgba(48, 159, 94, 0.3);
+    -webkit-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+    font-size: 16px;
+    border-radius: 15px;
+}
+.forms__button:hover {
+    color: #fff;
+    background-color: #292929;
+}
+.forms__button span {
+    position: relative;
+}
+.forms__button span::before {
+    content: "";
+    position: absolute;
+    background: url(../../assets/icons/telephone-fill.svg);
+    width: 16px;
+    height: 16px;
+    left: -25px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.closeForm {
+    font-weight: 700;
+    background: inherit;
+    border: 0px;
+    font-size: 27px;
+    color: red;
+}

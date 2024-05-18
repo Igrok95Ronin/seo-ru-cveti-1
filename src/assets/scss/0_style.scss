@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.containerP0 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    font:
+        16px Helvetica,
+        Arial,
+        sans-serif;
+    max-width: 1920px;
+    min-width: 320px;
+    color: #000;
+}
+
+:root {
+    --mainColor: #000;
+}
+
+$btnColorFixed: var(--mainColor);
+
+@mixin h1Title {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: clamp(36px, 5vw, 50px);
+}
+@mixin h2Title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: clamp(22px, 4vw, 32px);
+}
+@mixin btn {
+    background-color: var(--mainColor);
+    padding: 10px 10px 10px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    transition: 0.3s;
+    span {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../icons/telephone-fill.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            top: 50%;
+            left: -30px;
+            transform: translateY(-50%);
+        }
+    }
+    &:hover {
+        color: #f6f3f0;
+    }
+}
+@mixin txt {
+    padding: 0 10px;
+    line-height: 20px;
+}
