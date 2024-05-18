@@ -114,16 +114,18 @@ body {
 }
 
 :root {
-    --mainColor: #000;
+    --mainColor: #d82020;
 }
 
 $btnColorFixed: var(--mainColor);
 
 @mixin h1Title {
     color: #fff;
+    background-color: var(--mainColor);
     text-align: center;
     font-weight: 700;
-    font-size: clamp(36px, 5vw, 50px);
+    font-size: clamp(32px, 5vw, 40px);
+    padding: 10px 5px;
 }
 @mixin h2Title {
     text-align: center;
