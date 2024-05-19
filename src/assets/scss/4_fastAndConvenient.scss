@@ -1,0 +1,35 @@
+.fastAndConvenient {
+    margin-top: 50px;
+}
+.fastAndConvenient__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.fastAndConvenient__left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fastAndConvenient__txt {
+    line-height: 20px;
+}
+.fastAndConvenient__title {
+    color: #fff;
+    background-color: var(--mainColor);
+    padding: 20px 10px;
+    font-weight: 700;
+    font-size: clamp(22px, 4vw, 28px);
+    text-align: center;
+}
+.fastAndConvenient__right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fastAndConvenient__btn-wrapper {
+    text-align: center;
+}
+.fastAndConvenient__btn {
+    @include btn;
+}
