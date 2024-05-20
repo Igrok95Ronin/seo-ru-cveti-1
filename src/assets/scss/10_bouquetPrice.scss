@@ -1,0 +1,13 @@
+.bouquetPrice {
+    margin-top: 50px;
+}
+.bouquetPrice__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.bouquetPrice__left {
+}
+.bouquetPrice__txt {
+    line-height: 20px;
+}
