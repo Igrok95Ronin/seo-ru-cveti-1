@@ -1,3 +1,36 @@
+@media(max-width: 767px) {
+    .header__box,
+    .fastShipping__box {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .promotion__box,
+    .fastAndConvenient__box,
+    .orderFlowers__box,
+    .whatsApp__box,
+    .rose2550__box,
+    .rose101__box,
+    .bouquetPrice__box{
+        grid-template-columns: 1fr;
+    }
+    .header__subTitle,
+    .fastShipping__title{
+        margin-bottom: 0;
+    }
+    .header__btn-wrapper{
+        text-align: center;
+    }
+    .comments__box {
+        grid-template-columns: 1fr;
+        gap: 100px;
+    }
+    .rose2550__price {
+        padding-left: 50px;
+    }
+    .rose101__btn-wrapper {
+        margin-top: 30px;
+    }
+}
 @media(max-width: 500px) {
     .btnFixedD {
         display: none;
