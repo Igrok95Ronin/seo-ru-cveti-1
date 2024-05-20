@@ -1,0 +1,58 @@
+.rose2550 {
+    margin-top: 50px;
+}
+.rose2550__box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.rose2550__left {
+}
+.rose2550__title {
+    color: #fff;
+    background-color: var(--mainColor);
+    padding: 20px 10px;
+    font-weight: 700;
+    font-size: clamp(22px, 4vw, 28px);
+    text-align: center;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+.rose2550__wrapper {
+    display: flex;
+    align-items: center;
+}
+.rose2550__img-wrapper {
+    max-width: 150px;
+}
+.rose2550__img {
+    width: 150px;
+}
+.rose2550__inner {
+}
+.rose2550_order {
+    font-weight: 700;
+    font-size: 20px;
+}
+.rose2550__rose {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+.rose2550__price {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    background-color: #129e5b;
+    color: #fff;
+    padding: 10px;
+    width: 90%;
+    margin-top: -50px;
+}
+.rose2550__right {
+}
+.whatsApp__btn-wrapper {
+    margin-top: 20px;
+}
+.whatsApp__img-whatsApp {
+}
